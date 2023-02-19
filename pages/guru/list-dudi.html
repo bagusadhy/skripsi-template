@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class=" bg-[#F9F9F9] overflow-x-hidden">
+
+    <section class="mx-10">
+
+
+        <nav class="py-2 bg-white -mx-10 px-10">
+            <div class="flex justify-between items-center">
+                <div>
+                    <img src="../assets/images/logo.png" alt="" class="scale-75 -mx-8 md:mx-0 md:scale-100">
+                </div>
+
+                <div class="">
+                    <a href=""
+                        class="flex items-center gap-3 text-red-500 before:w-0.5 before:h-6 before:bg-gray-200 before:mr-10">
+                        <span class="">
+                            <svg class="w-[25px] h-auto  md:w-[31px] md:h-[27px]" viewBox="0 0 31 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.44372 3.45455H13.939V0.5H2.44372C1.79561 0.5 1.17404 0.811282 0.71575 1.36537C0.257463 1.91945 0 2.67095 0 3.45455V23.5455C0 24.329 0.257463 25.0805 0.71575 25.6346C1.17404 26.1887 1.79561 26.5 2.44372 26.5H13.939V23.5455H2.44372V3.45455Z"
+                                    fill="#C43E40" />
+                                <path
+                                    d="M30.0091 11.1358L22.1892 4.65942L20.8011 7.02306L26.8225 11.9867H9.11035V14.9649H26.842L20.8207 19.9522L22.2087 22.3158L30.0091 15.8631C30.3162 15.5908 30.5659 15.235 30.738 14.8243C30.9101 14.4137 30.9998 13.9598 30.9998 13.4994C30.9998 13.0391 30.9101 12.5852 30.738 12.1745C30.5659 11.7639 30.3162 11.408 30.0091 11.1358Z"
+                                    fill="#C43E40" />
+                            </svg>
+                        </span>
+                        <span class="hidden lg:block">
+                            Keluar
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="bg-[##F9F9F9] mt-10 -mx-10 md:px-10">
+            <div class="flex justify-between gap-10 flex-col lg:flex-row">
+                <aside class="bg-white px-2 py-2 w-screen overflow-hidden rounded-md lg:basis-3/12 h-fit">
+                    <div class="border-2 border-gray-500 rounded-md px-3 mb-5 py-3">
+                        <a href="../guru/index.html" class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8cGVvcGxlfHx8fHx8MTY3NjcxMDY0NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100"
+                                alt="" class="rounded-full w-[41px] h-[41px] bg-cover">
+                
+                            <div>
+                                <h4 class="font-bold">John Doe</h4>
+                                <p>Guru Pembimbing</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="divide-y">
+                        <a href="../guru/list-dudi.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Daftar Dudi
+                        </a>
+                        <a href="" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Daftar Dudi Terhubung
+                        </a>
+                        <a href="../guru/pengumuman.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Pengumuman
+                        </a>
+                        <a href="../guru/monitoring.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Monitoring
+                        </a>
+                
+                        <!-- this dropdown show in large screen and hide in phone screen -->
+                        <div x-data="{ open: false }" class="hidden lg:block">
+                            <div x-on:click="open = ! open"
+                                class="py-3 px-2 font-bold flex justify-between items-center cursor-pointer rounded hover:bg-gray-300">
+                                Siswa
+                
+                                <span x-show="!open" class="transition-all ease-in-out">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0716 1.98807L10.0717 7.9429L15.9956 7.94302C16.1307 7.93881 16.2652 7.96192 16.3912 8.01097C16.5171 8.06001 16.6318 8.13398 16.7284 8.22844C16.933 8.43302 17.048 8.71048 17.048 8.99979C17.048 9.28911 16.933 9.56657 16.7285 9.77114C16.6357 9.8675 16.5242 9.94389 16.4009 9.99562C16.2775 10.0474 16.1449 10.0733 16.0111 10.0719L10.0486 10.0333L10.0487 16.0344C10.0515 16.2859 9.9576 16.5288 9.78647 16.7131C9.5819 16.9177 9.30444 17.0326 9.01512 17.0326C8.72581 17.0326 8.44835 16.9177 8.24377 16.7131C8.14138 16.6189 8.05971 16.5044 8.00393 16.3769C7.94816 16.2494 7.9195 16.1118 7.91978 15.9726L7.95823 10.0564L2.01883 10.0562C1.88634 10.0584 1.75473 10.0342 1.63161 9.98526C1.50849 9.93627 1.39628 9.86339 1.30147 9.77081C1.09689 9.56623 0.981955 9.28877 0.981949 8.99945C0.981943 8.71014 1.09687 8.43268 1.30144 8.22811C1.39421 8.13175 1.50569 8.05536 1.62904 8.00363C1.7524 7.9519 1.88503 7.92593 2.01879 7.9273L7.98132 7.96599L7.9812 1.96489C7.97843 1.71339 8.0723 1.47042 8.24344 1.28611C8.44801 1.08154 8.72547 0.966614 9.01478 0.96662C9.3041 0.966626 9.58156 1.08156 9.78614 1.28614C9.96895 1.47358 10.0715 1.72582 10.0716 1.98807Z"
+                                            fill="#5F6368" />
+                                    </svg>
+                                </span>
+                
+                                <span x-show="open" class="transition-all ease-in-out">
+                                    <svg width="18" height="2" viewBox="0 0 19 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.6 2H1.4C1.16131 2 0.932387 1.89464 0.763604 1.70711C0.594821 1.51957 0.5 1.26522 0.5 1C0.5 0.734784 0.594821 0.480429 0.763604 0.292892C0.932387 0.105356 1.16131 0 1.4 0H17.6C17.8387 0 18.0676 0.105356 18.2364 0.292892C18.4052 0.480429 18.5 0.734784 18.5 1C18.5 1.26522 18.4052 1.51957 18.2364 1.70711C18.0676 1.89464 17.8387 2 17.6 2Z"
+                                            fill="#5F6368" />
+                                    </svg>
+                
+                                </span>
+                            </div>
+                
+                            <hr x-show="open">
+                            <div class="divide-y px-5 transition-all ease-in" :class="open ? '' : 'hidden'">
+                                <a href="../guru/list-siswa.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Daftar Siswa
+                                </a>
+                                <a href="../guru/jurnal.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Jurnal
+                                </a>
+                                <a href="../guru/absensi.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Absensi
+                                </a>
+                                <a href="../guru/laporan.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Laporan Akhir & Presensi
+                                </a>
+                                <a href="../guru/nilai.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Nilai Akhir
+                                </a>
+                            </div>
+                        </div>
+                
+                        <!-- this menu show in phone screen and hide large screen -->
+                        <div class="divide-y block lg:hidden">
+                            <a href="../guru/list-siswa.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Daftar Siswa
+                            </a>
+                            <a href="../guru/jurnal.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Jurnal
+                            </a>
+                            <a href="../guru/absensi.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Absensi
+                            </a>
+                            <a href="../guru/laporan.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Laporan Akhir & Presentasi
+                            </a>
+                            <a href="../guru/nilai.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Nilai Akhir
+                            </a>
+                        </div>
+                
+                    </div>
+                </aside>
+                
+                <main class="basis-9/12 bg-white h-fit px-10 py-5 ">
+                    <a href="" class="block lg:hidden mb-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="48" d="M244 400L100 256l144-144M120 256h292" />
+                        </svg>
+                    </a>
+                    <h1 class="font-bold text-3xl mb-3">Daftar Dudi</h1>
+                    <hr class="bg-black">
+
+                    <div class="rounded-lg border border-gray-300 w-full mt-5 py-1">
+                        <form action="">
+                            <div class="flex justify-end items-center gap-3 md:px-5">
+                                <div class="flex justify-between rounded-md border border-blue-400 w-full md:w-4/12 px-5 py-3">
+                                    <input type="text" name="" id="" class="border-none focus:outline-none w-full text-sm placeholder:text-primary" placeholder="Cari Dudi">
+
+                                    <span class="ml-2 hidden md:block">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.5 22.5L17.7779 17.7695M20.3947 11.4474C20.3947 13.8204 19.4521 16.0962 17.7741 17.7741C16.0962 19.4521 13.8204 20.3947 11.4474 20.3947C9.07438 20.3947 6.79858 19.4521 5.12062 17.7741C3.44267 16.0962 2.5 13.8204 2.5 11.4474C2.5 9.07438 3.44267 6.79858 5.12062 5.12062C6.79858 3.44267 9.07438 2.5 11.4474 2.5C13.8204 2.5 16.0962 3.44267 17.7741 5.12062C19.4521 6.79858 20.3947 9.07438 20.3947 11.4474Z"
+                                                stroke="#315EC3" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+
+                                    <button type="submit" class="ml-2 block md:hidden">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.5 22.5L17.7779 17.7695M20.3947 11.4474C20.3947 13.8204 19.4521 16.0962 17.7741 17.7741C16.0962 19.4521 13.8204 20.3947 11.4474 20.3947C9.07438 20.3947 6.79858 19.4521 5.12062 17.7741C3.44267 16.0962 2.5 13.8204 2.5 11.4474C2.5 9.07438 3.44267 6.79858 5.12062 5.12062C6.79858 3.44267 9.07438 2.5 11.4474 2.5C13.8204 2.5 16.0962 3.44267 17.7741 5.12062C19.4521 6.79858 20.3947 9.07438 20.3947 11.4474Z"
+                                                stroke="#315EC3" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button type="submit" class="h-11 w-40 bg-[#EB7E31] text-white font-bold hidden md:block">Cari</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="rounded-lg border border-gray-300 w-full mt-5 py-10 flex flex-col lg:flex-row gap-12 justify-between px-5 items-center shadow-md">
+                        <div class="flex items-center gap-5 flex-col lg:flex-row justify-center">
+                            <img src="../assets/images/mitra.png" alt="">
+
+                            <div class="text-center lg:text-left">
+                                <h4 class="font-bold mb-3">Samsung Service Center</h4>
+                                <p class="flex gap-3 items-center">
+                                    <span>
+                                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.5 15.5C10.5111 15.5 9.5444 15.2068 8.72215 14.6574C7.89991 14.1079 7.25904 13.3271 6.8806 12.4134C6.50217 11.4998 6.40315 10.4945 6.59608 9.52455C6.789 8.55465 7.26521 7.66373 7.96447 6.96447C8.66373 6.26521 9.55465 5.789 10.5246 5.59608C11.4945 5.40315 12.4998 5.50217 13.4134 5.8806C14.3271 6.25904 15.1079 6.89991 15.6574 7.72215C16.2068 8.5444 16.5 9.5111 16.5 10.5C16.4984 11.8256 15.9711 13.0964 15.0338 14.0338C14.0964 14.9711 12.8256 15.4984 11.5 15.5ZM11.5 7.5C10.9067 7.5 10.3266 7.67595 9.83329 8.00559C9.33994 8.33524 8.95543 8.80377 8.72836 9.35195C8.5013 9.90013 8.44189 10.5033 8.55765 11.0853C8.6734 11.6672 8.95912 12.2018 9.37868 12.6213C9.79824 13.0409 10.3328 13.3266 10.9147 13.4424C11.4967 13.5581 12.0999 13.4987 12.6481 13.2716C13.1962 13.0446 13.6648 12.6601 13.9944 12.1667C14.3241 11.6734 14.5 11.0933 14.5 10.5C14.4992 9.7046 14.1829 8.942 13.6204 8.37956C13.058 7.81712 12.2954 7.5008 11.5 7.5Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.5 28.5L3.06401 18.551C2.94679 18.4016 2.83079 18.2513 2.71601 18.1C1.27499 16.2018 0.496519 13.8832 0.500012 11.5C0.500012 8.58262 1.65894 5.78473 3.72184 3.72183C5.78474 1.65893 8.58263 0.5 11.5 0.5C14.4174 0.5 17.2153 1.65893 19.2782 3.72183C21.3411 5.78473 22.5 8.58262 22.5 11.5C22.5035 13.8821 21.7254 16.1996 20.285 18.097L20.284 18.1C20.284 18.1 19.984 18.494 19.939 18.547L11.5 28.5ZM4.31201 16.895C4.31401 16.895 4.54601 17.203 4.59901 17.269L11.5 25.408L18.41 17.258C18.454 17.203 18.688 16.893 18.689 16.892C19.8662 15.3411 20.5023 13.447 20.5 11.5C20.5 9.11305 19.5518 6.82387 17.864 5.13604C16.1761 3.44821 13.887 2.5 11.5 2.5C9.11306 2.5 6.82388 3.44821 5.13605 5.13604C3.44822 6.82387 2.50001 9.11305 2.50001 11.5C2.49791 13.4482 3.13479 15.3434 4.31301 16.895H4.31201Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    Jalan Soekarno Hatta Malang
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="../guru/deskripsi-kegiatan.html" class="text-white px-2 md:px-5 py-4 bg-primary hover:bg-primaryhover rounded">Lihat Deskripsi Kegiatan</a>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border border-gray-300 w-full mt-5 py-10 flex flex-col lg:flex-row gap-12 justify-between px-5 items-center shadow-md">
+                        <div class="flex items-center gap-5 flex-col lg:flex-row justify-center">
+                            <img src="../assets/images/mitra.png" alt="">
+
+                            <div class="text-center lg:text-left">
+                                <h4 class="font-bold mb-3">Samsung Service Center</h4>
+                                <p class="flex gap-3 items-center">
+                                    <span>
+                                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.5 15.5C10.5111 15.5 9.5444 15.2068 8.72215 14.6574C7.89991 14.1079 7.25904 13.3271 6.8806 12.4134C6.50217 11.4998 6.40315 10.4945 6.59608 9.52455C6.789 8.55465 7.26521 7.66373 7.96447 6.96447C8.66373 6.26521 9.55465 5.789 10.5246 5.59608C11.4945 5.40315 12.4998 5.50217 13.4134 5.8806C14.3271 6.25904 15.1079 6.89991 15.6574 7.72215C16.2068 8.5444 16.5 9.5111 16.5 10.5C16.4984 11.8256 15.9711 13.0964 15.0338 14.0338C14.0964 14.9711 12.8256 15.4984 11.5 15.5ZM11.5 7.5C10.9067 7.5 10.3266 7.67595 9.83329 8.00559C9.33994 8.33524 8.95543 8.80377 8.72836 9.35195C8.5013 9.90013 8.44189 10.5033 8.55765 11.0853C8.6734 11.6672 8.95912 12.2018 9.37868 12.6213C9.79824 13.0409 10.3328 13.3266 10.9147 13.4424C11.4967 13.5581 12.0999 13.4987 12.6481 13.2716C13.1962 13.0446 13.6648 12.6601 13.9944 12.1667C14.3241 11.6734 14.5 11.0933 14.5 10.5C14.4992 9.7046 14.1829 8.942 13.6204 8.37956C13.058 7.81712 12.2954 7.5008 11.5 7.5Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.5 28.5L3.06401 18.551C2.94679 18.4016 2.83079 18.2513 2.71601 18.1C1.27499 16.2018 0.496519 13.8832 0.500012 11.5C0.500012 8.58262 1.65894 5.78473 3.72184 3.72183C5.78474 1.65893 8.58263 0.5 11.5 0.5C14.4174 0.5 17.2153 1.65893 19.2782 3.72183C21.3411 5.78473 22.5 8.58262 22.5 11.5C22.5035 13.8821 21.7254 16.1996 20.285 18.097L20.284 18.1C20.284 18.1 19.984 18.494 19.939 18.547L11.5 28.5ZM4.31201 16.895C4.31401 16.895 4.54601 17.203 4.59901 17.269L11.5 25.408L18.41 17.258C18.454 17.203 18.688 16.893 18.689 16.892C19.8662 15.3411 20.5023 13.447 20.5 11.5C20.5 9.11305 19.5518 6.82387 17.864 5.13604C16.1761 3.44821 13.887 2.5 11.5 2.5C9.11306 2.5 6.82388 3.44821 5.13605 5.13604C3.44822 6.82387 2.50001 9.11305 2.50001 11.5C2.49791 13.4482 3.13479 15.3434 4.31301 16.895H4.31201Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    Jalan Soekarno Hatta Malang
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="../guru/deskripsi-kegiatan.html" class="text-white px-2 md:px-5 py-4 bg-primary hover:bg-primaryhover rounded">Lihat Deskripsi Kegiatan</a>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border border-gray-300 w-full mt-5 py-10 flex flex-col lg:flex-row gap-12 justify-between px-5 items-center shadow-md">
+                        <div class="flex items-center gap-5 flex-col lg:flex-row justify-center">
+                            <img src="../assets/images/mitra.png" alt="">
+
+                            <div class="text-center lg:text-left">
+                                <h4 class="font-bold mb-3">Samsung Service Center</h4>
+                                <p class="flex gap-3 items-center">
+                                    <span>
+                                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.5 15.5C10.5111 15.5 9.5444 15.2068 8.72215 14.6574C7.89991 14.1079 7.25904 13.3271 6.8806 12.4134C6.50217 11.4998 6.40315 10.4945 6.59608 9.52455C6.789 8.55465 7.26521 7.66373 7.96447 6.96447C8.66373 6.26521 9.55465 5.789 10.5246 5.59608C11.4945 5.40315 12.4998 5.50217 13.4134 5.8806C14.3271 6.25904 15.1079 6.89991 15.6574 7.72215C16.2068 8.5444 16.5 9.5111 16.5 10.5C16.4984 11.8256 15.9711 13.0964 15.0338 14.0338C14.0964 14.9711 12.8256 15.4984 11.5 15.5ZM11.5 7.5C10.9067 7.5 10.3266 7.67595 9.83329 8.00559C9.33994 8.33524 8.95543 8.80377 8.72836 9.35195C8.5013 9.90013 8.44189 10.5033 8.55765 11.0853C8.6734 11.6672 8.95912 12.2018 9.37868 12.6213C9.79824 13.0409 10.3328 13.3266 10.9147 13.4424C11.4967 13.5581 12.0999 13.4987 12.6481 13.2716C13.1962 13.0446 13.6648 12.6601 13.9944 12.1667C14.3241 11.6734 14.5 11.0933 14.5 10.5C14.4992 9.7046 14.1829 8.942 13.6204 8.37956C13.058 7.81712 12.2954 7.5008 11.5 7.5Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.5 28.5L3.06401 18.551C2.94679 18.4016 2.83079 18.2513 2.71601 18.1C1.27499 16.2018 0.496519 13.8832 0.500012 11.5C0.500012 8.58262 1.65894 5.78473 3.72184 3.72183C5.78474 1.65893 8.58263 0.5 11.5 0.5C14.4174 0.5 17.2153 1.65893 19.2782 3.72183C21.3411 5.78473 22.5 8.58262 22.5 11.5C22.5035 13.8821 21.7254 16.1996 20.285 18.097L20.284 18.1C20.284 18.1 19.984 18.494 19.939 18.547L11.5 28.5ZM4.31201 16.895C4.31401 16.895 4.54601 17.203 4.59901 17.269L11.5 25.408L18.41 17.258C18.454 17.203 18.688 16.893 18.689 16.892C19.8662 15.3411 20.5023 13.447 20.5 11.5C20.5 9.11305 19.5518 6.82387 17.864 5.13604C16.1761 3.44821 13.887 2.5 11.5 2.5C9.11306 2.5 6.82388 3.44821 5.13605 5.13604C3.44822 6.82387 2.50001 9.11305 2.50001 11.5C2.49791 13.4482 3.13479 15.3434 4.31301 16.895H4.31201Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    Jalan Soekarno Hatta Malang
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="../guru/deskripsi-kegiatan.html" class="text-white px-2 md:px-5 py-4 bg-primary hover:bg-primaryhover rounded">Lihat Deskripsi Kegiatan</a>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border border-gray-300 w-full mt-5 py-10 flex flex-col lg:flex-row gap-12 justify-between px-5 items-center shadow-md">
+                        <div class="flex items-center gap-5 flex-col lg:flex-row justify-center">
+                            <img src="../assets/images/mitra.png" alt="">
+
+                            <div class="text-center lg:text-left">
+                                <h4 class="font-bold mb-3">Samsung Service Center</h4>
+                                <p class="flex gap-3 items-center">
+                                    <span>
+                                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.5 15.5C10.5111 15.5 9.5444 15.2068 8.72215 14.6574C7.89991 14.1079 7.25904 13.3271 6.8806 12.4134C6.50217 11.4998 6.40315 10.4945 6.59608 9.52455C6.789 8.55465 7.26521 7.66373 7.96447 6.96447C8.66373 6.26521 9.55465 5.789 10.5246 5.59608C11.4945 5.40315 12.4998 5.50217 13.4134 5.8806C14.3271 6.25904 15.1079 6.89991 15.6574 7.72215C16.2068 8.5444 16.5 9.5111 16.5 10.5C16.4984 11.8256 15.9711 13.0964 15.0338 14.0338C14.0964 14.9711 12.8256 15.4984 11.5 15.5ZM11.5 7.5C10.9067 7.5 10.3266 7.67595 9.83329 8.00559C9.33994 8.33524 8.95543 8.80377 8.72836 9.35195C8.5013 9.90013 8.44189 10.5033 8.55765 11.0853C8.6734 11.6672 8.95912 12.2018 9.37868 12.6213C9.79824 13.0409 10.3328 13.3266 10.9147 13.4424C11.4967 13.5581 12.0999 13.4987 12.6481 13.2716C13.1962 13.0446 13.6648 12.6601 13.9944 12.1667C14.3241 11.6734 14.5 11.0933 14.5 10.5C14.4992 9.7046 14.1829 8.942 13.6204 8.37956C13.058 7.81712 12.2954 7.5008 11.5 7.5Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.5 28.5L3.06401 18.551C2.94679 18.4016 2.83079 18.2513 2.71601 18.1C1.27499 16.2018 0.496519 13.8832 0.500012 11.5C0.500012 8.58262 1.65894 5.78473 3.72184 3.72183C5.78474 1.65893 8.58263 0.5 11.5 0.5C14.4174 0.5 17.2153 1.65893 19.2782 3.72183C21.3411 5.78473 22.5 8.58262 22.5 11.5C22.5035 13.8821 21.7254 16.1996 20.285 18.097L20.284 18.1C20.284 18.1 19.984 18.494 19.939 18.547L11.5 28.5ZM4.31201 16.895C4.31401 16.895 4.54601 17.203 4.59901 17.269L11.5 25.408L18.41 17.258C18.454 17.203 18.688 16.893 18.689 16.892C19.8662 15.3411 20.5023 13.447 20.5 11.5C20.5 9.11305 19.5518 6.82387 17.864 5.13604C16.1761 3.44821 13.887 2.5 11.5 2.5C9.11306 2.5 6.82388 3.44821 5.13605 5.13604C3.44822 6.82387 2.50001 9.11305 2.50001 11.5C2.49791 13.4482 3.13479 15.3434 4.31301 16.895H4.31201Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    Jalan Soekarno Hatta Malang
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="../guru/deskripsi-kegiatan.html" class="text-white px-2 md:px-5 py-4 bg-primary hover:bg-primaryhover rounded">Lihat Deskripsi Kegiatan</a>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border border-gray-300 w-full mt-5 py-10 flex flex-col lg:flex-row gap-12 justify-between px-5 items-center shadow-md">
+                        <div class="flex items-center gap-5 flex-col lg:flex-row justify-center">
+                            <img src="../assets/images/mitra.png" alt="">
+
+                            <div class="text-center lg:text-left">
+                                <h4 class="font-bold mb-3">Samsung Service Center</h4>
+                                <p class="flex gap-3 items-center">
+                                    <span>
+                                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.5 15.5C10.5111 15.5 9.5444 15.2068 8.72215 14.6574C7.89991 14.1079 7.25904 13.3271 6.8806 12.4134C6.50217 11.4998 6.40315 10.4945 6.59608 9.52455C6.789 8.55465 7.26521 7.66373 7.96447 6.96447C8.66373 6.26521 9.55465 5.789 10.5246 5.59608C11.4945 5.40315 12.4998 5.50217 13.4134 5.8806C14.3271 6.25904 15.1079 6.89991 15.6574 7.72215C16.2068 8.5444 16.5 9.5111 16.5 10.5C16.4984 11.8256 15.9711 13.0964 15.0338 14.0338C14.0964 14.9711 12.8256 15.4984 11.5 15.5ZM11.5 7.5C10.9067 7.5 10.3266 7.67595 9.83329 8.00559C9.33994 8.33524 8.95543 8.80377 8.72836 9.35195C8.5013 9.90013 8.44189 10.5033 8.55765 11.0853C8.6734 11.6672 8.95912 12.2018 9.37868 12.6213C9.79824 13.0409 10.3328 13.3266 10.9147 13.4424C11.4967 13.5581 12.0999 13.4987 12.6481 13.2716C13.1962 13.0446 13.6648 12.6601 13.9944 12.1667C14.3241 11.6734 14.5 11.0933 14.5 10.5C14.4992 9.7046 14.1829 8.942 13.6204 8.37956C13.058 7.81712 12.2954 7.5008 11.5 7.5Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.5 28.5L3.06401 18.551C2.94679 18.4016 2.83079 18.2513 2.71601 18.1C1.27499 16.2018 0.496519 13.8832 0.500012 11.5C0.500012 8.58262 1.65894 5.78473 3.72184 3.72183C5.78474 1.65893 8.58263 0.5 11.5 0.5C14.4174 0.5 17.2153 1.65893 19.2782 3.72183C21.3411 5.78473 22.5 8.58262 22.5 11.5C22.5035 13.8821 21.7254 16.1996 20.285 18.097L20.284 18.1C20.284 18.1 19.984 18.494 19.939 18.547L11.5 28.5ZM4.31201 16.895C4.31401 16.895 4.54601 17.203 4.59901 17.269L11.5 25.408L18.41 17.258C18.454 17.203 18.688 16.893 18.689 16.892C19.8662 15.3411 20.5023 13.447 20.5 11.5C20.5 9.11305 19.5518 6.82387 17.864 5.13604C16.1761 3.44821 13.887 2.5 11.5 2.5C9.11306 2.5 6.82388 3.44821 5.13605 5.13604C3.44822 6.82387 2.50001 9.11305 2.50001 11.5C2.49791 13.4482 3.13479 15.3434 4.31301 16.895H4.31201Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    Jalan Soekarno Hatta Malang
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="../guru/deskripsi-kegiatan.html" class="text-white px-2 md:px-5 py-4 bg-primary hover:bg-primaryhover rounded">Lihat Deskripsi Kegiatan</a>
+                        </div>
+                    </div>
+
+                   
+                </main>
+            </div>
+        </section>
+
+    </section>
+
+
+
+    <script defer src="https://unpkg.com/alpinejs@3.8.0/dist/cdn.min.js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
