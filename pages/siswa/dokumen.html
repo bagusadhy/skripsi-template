@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class=" bg-[#F9F9F9] overflow-x-hidden">
+
+    <section class="mx-10">
+
+
+        <nav class="py-2 bg-white -mx-10 px-10">
+            <div class="flex justify-between items-center">
+                <div>
+                    <img src="../assets/images/logo.png" alt="" class="scale-75 -mx-8 md:mx-0 md:scale-100">
+                </div>
+
+                <div class="">
+                    <a href=""
+                        class="flex items-center gap-3 text-red-500 before:w-0.5 before:h-6 before:bg-gray-200 before:mr-10">
+                        <span class="">
+                            <svg class="w-[25px] h-auto  md:w-[31px] md:h-[27px]" viewBox="0 0 31 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.44372 3.45455H13.939V0.5H2.44372C1.79561 0.5 1.17404 0.811282 0.71575 1.36537C0.257463 1.91945 0 2.67095 0 3.45455V23.5455C0 24.329 0.257463 25.0805 0.71575 25.6346C1.17404 26.1887 1.79561 26.5 2.44372 26.5H13.939V23.5455H2.44372V3.45455Z"
+                                    fill="#C43E40" />
+                                <path
+                                    d="M30.0091 11.1358L22.1892 4.65942L20.8011 7.02306L26.8225 11.9867H9.11035V14.9649H26.842L20.8207 19.9522L22.2087 22.3158L30.0091 15.8631C30.3162 15.5908 30.5659 15.235 30.738 14.8243C30.9101 14.4137 30.9998 13.9598 30.9998 13.4994C30.9998 13.0391 30.9101 12.5852 30.738 12.1745C30.5659 11.7639 30.3162 11.408 30.0091 11.1358Z"
+                                    fill="#C43E40" />
+                            </svg>
+                        </span>
+                        <span class="hidden lg:block">
+                            Keluar
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="bg-[##F9F9F9] mt-10 -mx-10 md:px-10">
+            <div class="flex justify-between gap-10 flex-col lg:flex-row">
+                <aside class="bg-white px-2 py-2 w-screen overflow-hidden rounded-md lg:basis-3/12 h-fit">
+                    <div class="border-2 border-gray-500 rounded-md px-3 mb-5 py-3">
+                        <a href="../siswa/index.html" class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8cGVvcGxlfHx8fHx8MTY3NjcxMDY0NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100"
+                                alt="" class="rounded-full w-[41px] h-[41px] bg-cover">
+                    
+                            <div>
+                                <h4 class="font-bold">John Doe</h4>
+                                <p>Siswa</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="divide-y">
+                        <a href="../siswa/index.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Pengajuan Dudi
+                        </a>
+                        <a href="../siswa/list-dudi.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Daftar Dudi
+                        </a>
+                        <a href="../siswa/dokumen.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Dokumen Persyaratan
+                        </a>
+                        <a href="../siswa/kegiatan.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Kegiatan PKL
+                        </a>
+                        <a href="../siswa/pengumuman.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Pengumuman
+                        </a>
+                        <a href="../siswa/notifikasi.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Notifikasi
+                        </a>
+
+
+                    </div>
+                </aside>
+                <main class="basis-9/12 bg-white h-fit px-10 py-5 ">
+                    <a href="" class="block lg:hidden mb-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="48" d="M244 400L100 256l144-144M120 256h292" />
+                        </svg>
+                    </a>
+                    <h1 class="font-bold text-3xl mb-3">Dokumen Persyaratan</h1>
+                    <hr class="bg-black">
+
+                    <div class="mt-5 w-full">
+                        <form action="" x-data="{ parent: '', school: '' }">
+                            <div class="mb-10">
+                                <p class="mb-2">Surat Keterangan Persetujuan Orang Tua</p>
+                                <label for="" class="w-full">
+                                    <div class="border-dashed border-2 border-gray-300 rounded px-5 py-2 flex flex-col md:flex-row items-center justify-between overflow-hidden">
+                                        <div class="flex gap-3 items-center justify-center md:justify-start w-full">
+                                            <span class="hidden md:block">
+                                                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="75" height="75" rx="10" fill="#FDDBDB" />
+                                                    <path
+                                                        d="M51.1111 20H23.8889C21.75 20 20 21.75 20 23.8889V51.1111C20 53.25 21.75 55 23.8889 55H51.1111C53.25 55 55 53.25 55 51.1111V23.8889C55 21.75 53.25 20 51.1111 20ZM32.6389 36.5278C32.6389 38.0833 31.2778 39.4444 29.7222 39.4444H27.7778V43.3333H24.8611V31.6667H29.7222C31.2778 31.6667 32.6389 33.0278 32.6389 34.5833V36.5278ZM42.3611 40.4167C42.3611 41.9722 41 43.3333 39.4444 43.3333H34.5833V31.6667H39.4444C41 31.6667 42.3611 33.0278 42.3611 34.5833V40.4167ZM50.1389 34.5833H47.2222V36.5278H50.1389V39.4444H47.2222V43.3333H44.3056V31.6667H50.1389V34.5833ZM37.5 34.5833H39.4444V40.4167H37.5V34.5833ZM27.7778 34.5833H29.7222V36.5278H27.7778V34.5833Z"
+                                                        fill="#AA2D2D" />
+                                                </svg>
+                                            </span>
+
+                                            <p id="parentText" class="font-semibold text-sm text-center">Upload File PDF. Max Size 2 MB</p>
+                                        </div>
+                                        <input type="file" class="file:rounded file:px-10 file:py-2 file:bg-transparent file:border file:border-blue-400 file:text-blue-400 text-transparent md:-mr-24 -mr-[185px] mt-5 md:mt-0" title=" " id="parentFile" x-model="parent">
+                                    </div>
+                                </label>
+                            </div>
+                            <div>
+                                <p class="mb-2">Surat Keterangan Rekomendasi Sekolah</p>
+                                <label for="" class="w-full">
+                                    <div class="border-dashed border-2 border-gray-300 rounded px-5 py-2 flex flex-col md:flex-row items-center justify-between overflow-hidden">
+                                        <div class="flex gap-3 items-center justify-center md:justify-start w-full">
+                                            <span class="hidden md:block">
+                                                <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="75" height="75" rx="10" fill="#FDDBDB" />
+                                                    <path
+                                                        d="M51.1111 20H23.8889C21.75 20 20 21.75 20 23.8889V51.1111C20 53.25 21.75 55 23.8889 55H51.1111C53.25 55 55 53.25 55 51.1111V23.8889C55 21.75 53.25 20 51.1111 20ZM32.6389 36.5278C32.6389 38.0833 31.2778 39.4444 29.7222 39.4444H27.7778V43.3333H24.8611V31.6667H29.7222C31.2778 31.6667 32.6389 33.0278 32.6389 34.5833V36.5278ZM42.3611 40.4167C42.3611 41.9722 41 43.3333 39.4444 43.3333H34.5833V31.6667H39.4444C41 31.6667 42.3611 33.0278 42.3611 34.5833V40.4167ZM50.1389 34.5833H47.2222V36.5278H50.1389V39.4444H47.2222V43.3333H44.3056V31.6667H50.1389V34.5833ZM37.5 34.5833H39.4444V40.4167H37.5V34.5833ZM27.7778 34.5833H29.7222V36.5278H27.7778V34.5833Z"
+                                                        fill="#AA2D2D" />
+                                                </svg>
+                                            </span>
+
+                                            <p id="schoolText" class="font-semibold text-sm">Upload File PDF. Max Size 2 MB</p>
+                                        </div>
+                                        <input type="file" class="file:rounded file:px-10 file:py-2 file:bg-transparent file:border file:border-blue-400 file:text-blue-400 text-transparent md:-mr-24 -mr-[185px] mt-5 md:mt-0" title=" " id="schoolFile" x-model="school">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="flex justify-end mt-10">
+                                <div 
+                                    class="px-10 py-3 rounded bg-gray-500 text-sm text-white font-medium cursor-not-allowed"
+                                    x-show="!parent.length || !school.length">
+                                        Simpan Dokumen
+                                </div>
+                                <button 
+                                    type="submit" 
+                                    class="px-10 py-3 rounded bg-primary text-sm text-white font-medium cursor-not-allowed"
+                                    x-show="parent.length && school.length" >
+                                        Simpan Dokumen
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+    </section>
+
+
+
+    <script defer src="https://unpkg.com/alpinejs@3.8.0/dist/cdn.min.js"></script>
+    <script>
+        var parentFile= document.getElementById('parentFile');
+        var schoolFile= document.getElementById('schoolFile');
+        var parentText = document.getElementById('parentText')
+        var schoolText = document.getElementById('schoolText')
+
+        parentFile.addEventListener('change', function () {
+            if (this.files.length){
+                parentText.innerText = this.files[0].name;
+            }
+        });
+
+        schoolFile.addEventListener('change', function () {
+            if (this.files.length){
+                schoolText.innerText = this.files[0].name;
+            }
+        });
+    </script>
+</body>
+
+</html>
