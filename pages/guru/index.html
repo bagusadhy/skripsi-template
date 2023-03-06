@@ -149,12 +149,12 @@
                     <hr class="bg-black">
 
                     <form action="" class="mt-5" x-data="{ foto: '', nama: '', nip: '', jurusan: '', kontak: '', email: ''}">
-                        <label for="foto">
+                        <div>
                             <h4 class="font-medium text-2xl mb-5 px-2">
                                 Foto Profil
                             </h4>
-                            <div class="flex gap-10 items-center">
-                                <div class="w-[125px] h-[125px] rounded-full border-2 border-dashed border-gray-900 bg-[#C1DBFC] flex flex-col justify-center items-center cursor-pointer">
+                            <label for="input-pic" class="flex gap-10 items-center">
+                                <div id="profil-circle" class="w-[125px] h-[125px] rounded-full border-2 border-dashed border-gray-900 bg-[#C1DBFC] flex flex-col justify-center items-center cursor-pointer">
                                     <span><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M9.99994 7.75839C10.74 7.26392 11.61 7 12.5 7C13.0714 7 13.5346 7.46322 13.5346 8.03464C13.5346 8.60606 13.0714 9.06928 12.5 9.06928C12.0193 9.06928 11.5493 9.21184 11.1496 9.47893C10.7498 9.74602 10.4383 10.1256 10.2543 10.5698C10.0703 11.014 10.0222 11.5027 10.116 11.9742C10.2098 12.4457 10.4413 12.8788 10.7812 13.2188C11.1212 13.5587 11.5543 13.7902 12.0258 13.884C12.4973 13.9778 12.986 13.9297 13.4302 13.7457C13.8744 13.5617 14.254 13.2502 14.5211 12.8504C14.7882 12.4507 14.9307 11.9807 14.9307 11.5C14.9307 10.9286 15.3939 10.4654 15.9654 10.4654C16.5368 10.4654 17 10.9286 17 11.5C17 12.39 16.7361 13.26 16.2416 14.0001C15.7471 14.7401 15.0443 15.3169 14.2221 15.6575C13.3998 15.998 12.495 16.0872 11.6221 15.9135C10.7492 15.7399 9.94736 15.3113 9.31802 14.682C8.68868 14.0526 8.2601 13.2508 8.08647 12.3779C7.91283 11.505 8.00195 10.6002 8.34254 9.77792C8.68314 8.95566 9.25991 8.25285 9.99994 7.75839Z"
@@ -178,19 +178,20 @@
                                     </span>
                                     <p class="w-32 text-center text-gray-600">Upload your photo</p>
                                 </div>
-
+                                <img src="" class="w-[125px] h-[125px] rounded-full border-2 border-dashed border-gray-900 bg-[#C1DBFC] cursor-pointer hidden" alt="" id="profil-pic">
+                                
                                 <div>
                                     <span class="">
                                         <h4 class="font-bold">Ketentuan foto :</h4>
                                         <p>Tidak melebihi 2 MB</p>
                                     </span>
-                                    <input type="file" name="" id="foto" 
+                                    <input type="file" name="" id="input-pic" 
                                     class="mt-3 file:rounded file:px-10 file:py-2 file:bg-transparent file:border file:border-blue-400 file:text-blue-400 text-transparent"
                                     x-model="foto"
                                     >
                                 </div>
-                            </div>
-                        </label>
+                            </label>
+                        </div>
 
                         <div class="flex justify-between flex-col lg:flex-row gap-10 mt-10 mb-20">
                             <div class="w-full">
@@ -272,8 +273,22 @@
    
     <script defer src="https://unpkg.com/alpinejs@3.8.0/dist/cdn.min.js"></script>
     <script>
+        var profil = document.getElementById("profil-circle");
+        var pic = document.getElementById("profil-pic");
+        var input = document.getElementById("input-pic");
+        var reader = new FileReader();
 
+        input.addEventListener('change', function(){
+            if (input.files && input.files[0]) {
 
+                profil.classList.add('hidden');
+                reader.onload = function (e) {
+                    pic.classList.remove('hidden');
+                    pic.setAttribute('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            };
+        });
     </script>
 </body>
 
