@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class=" bg-[#F9F9F9] overflow-x-hidden">
+
+    <section class="mx-10">
+
+
+        <nav class="py-2 bg-white -mx-10 px-10">
+            <div class="flex justify-between items-center">
+                <div>
+                    <img src="../assets/images/logo.png" alt="" class="scale-75 -mx-8 md:mx-0 md:scale-100">
+                </div>
+
+                <div class="">
+                    <a href=""
+                        class="flex items-center gap-3 text-red-500 before:w-0.5 before:h-6 before:bg-gray-200 before:mr-10">
+                        <span class="">
+                            <svg class="w-[25px] h-auto  md:w-[31px] md:h-[27px]" viewBox="0 0 31 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.44372 3.45455H13.939V0.5H2.44372C1.79561 0.5 1.17404 0.811282 0.71575 1.36537C0.257463 1.91945 0 2.67095 0 3.45455V23.5455C0 24.329 0.257463 25.0805 0.71575 25.6346C1.17404 26.1887 1.79561 26.5 2.44372 26.5H13.939V23.5455H2.44372V3.45455Z"
+                                    fill="#C43E40" />
+                                <path
+                                    d="M30.0091 11.1358L22.1892 4.65942L20.8011 7.02306L26.8225 11.9867H9.11035V14.9649H26.842L20.8207 19.9522L22.2087 22.3158L30.0091 15.8631C30.3162 15.5908 30.5659 15.235 30.738 14.8243C30.9101 14.4137 30.9998 13.9598 30.9998 13.4994C30.9998 13.0391 30.9101 12.5852 30.738 12.1745C30.5659 11.7639 30.3162 11.408 30.0091 11.1358Z"
+                                    fill="#C43E40" />
+                            </svg>
+                        </span>
+                        <span class="hidden lg:block">
+                            Keluar
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="bg-[##F9F9F9] mt-10 -mx-10 md:px-10">
+            <div class="flex justify-between gap-10 flex-col lg:flex-row">
+                <aside class="bg-white px-2 py-2 w-screen overflow-hidden rounded-md lg:basis-3/12 h-fit">
+                    <div class="border-2 border-gray-500 rounded-md px-3 mb-5 py-3">
+                        <a href="../mitra/index.html" class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8cGVvcGxlfHx8fHx8MTY3NjcxMDY0NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100"
+                                alt="" class="rounded-full w-[41px] h-[41px] bg-cover">
+
+                            <div>
+                                <h4 class="font-bold">Tokopaedi</h4>
+                                <p>Mitra PKL</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="divide-y">
+                        <a href="../mitra/lowongan.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Lowongan PKL
+                        </a>
+                        <a href="../mitra/calon-siswa.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Calon Siswa PKL
+                        </a>
+                        <a href="../mitra/pengumuman.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Pengumuman
+                        </a>
+                        <a href="../mitra/survei.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Survei Kepuasan Dudi
+                        </a>
+
+                        <!-- this dropdown show in large screen and hide in phone screen -->
+                        <div x-data="{ open: false }" class="hidden lg:block">
+                            <div x-on:click="open = ! open"
+                                class="py-3 px-2 font-bold flex justify-between items-center cursor-pointer rounded hover:bg-gray-300">
+                                Siswa
+
+                                <span x-show="!open" class="transition-all ease-in-out">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0716 1.98807L10.0717 7.9429L15.9956 7.94302C16.1307 7.93881 16.2652 7.96192 16.3912 8.01097C16.5171 8.06001 16.6318 8.13398 16.7284 8.22844C16.933 8.43302 17.048 8.71048 17.048 8.99979C17.048 9.28911 16.933 9.56657 16.7285 9.77114C16.6357 9.8675 16.5242 9.94389 16.4009 9.99562C16.2775 10.0474 16.1449 10.0733 16.0111 10.0719L10.0486 10.0333L10.0487 16.0344C10.0515 16.2859 9.9576 16.5288 9.78647 16.7131C9.5819 16.9177 9.30444 17.0326 9.01512 17.0326C8.72581 17.0326 8.44835 16.9177 8.24377 16.7131C8.14138 16.6189 8.05971 16.5044 8.00393 16.3769C7.94816 16.2494 7.9195 16.1118 7.91978 15.9726L7.95823 10.0564L2.01883 10.0562C1.88634 10.0584 1.75473 10.0342 1.63161 9.98526C1.50849 9.93627 1.39628 9.86339 1.30147 9.77081C1.09689 9.56623 0.981955 9.28877 0.981949 8.99945C0.981943 8.71014 1.09687 8.43268 1.30144 8.22811C1.39421 8.13175 1.50569 8.05536 1.62904 8.00363C1.7524 7.9519 1.88503 7.92593 2.01879 7.9273L7.98132 7.96599L7.9812 1.96489C7.97843 1.71339 8.0723 1.47042 8.24344 1.28611C8.44801 1.08154 8.72547 0.966614 9.01478 0.96662C9.3041 0.966626 9.58156 1.08156 9.78614 1.28614C9.96895 1.47358 10.0715 1.72582 10.0716 1.98807Z"
+                                            fill="#5F6368" />
+                                    </svg>
+                                </span>
+
+                                <span x-show="open" class="transition-all ease-in-out">
+                                    <svg width="18" height="2" viewBox="0 0 19 2" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.6 2H1.4C1.16131 2 0.932387 1.89464 0.763604 1.70711C0.594821 1.51957 0.5 1.26522 0.5 1C0.5 0.734784 0.594821 0.480429 0.763604 0.292892C0.932387 0.105356 1.16131 0 1.4 0H17.6C17.8387 0 18.0676 0.105356 18.2364 0.292892C18.4052 0.480429 18.5 0.734784 18.5 1C18.5 1.26522 18.4052 1.51957 18.2364 1.70711C18.0676 1.89464 17.8387 2 17.6 2Z"
+                                            fill="#5F6368" />
+                                    </svg>
+
+                                </span>
+                            </div>
+
+                            <hr x-show="open">
+                            <div class="divide-y px-5 transition-all ease-in" :class="open ? '' : 'hidden'">
+                                <a href="../mitra/list-siswa.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Daftar Siswa
+                                </a>
+                                <a href="../mitra/jurnal.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Jurnal
+                                </a>
+                                <a href="../mitra/absensi.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Absensi
+                                </a>
+                                <a href="../mitra/laporan.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Laporan Akhir
+                                </a>
+                                <a href="../mitra/nilai.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Nilai Akhir
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- this menu show in phone screen and hide large screen -->
+                        <div class="divide-y block lg:hidden">
+                            <a href="../mitra/list-siswa.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Daftar Siswa
+                            </a>
+                            <a href="../mitra/jurnal.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Jurnal
+                            </a>
+                            <a href="../mitra/absensi.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Absensi
+                            </a>
+                            <a href="../mitra/laporan.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Laporan Akhir & Presentasi
+                            </a>
+                            <a href="../mitra/nilai.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Nilai Akhir
+                            </a>
+                        </div>
+
+                    </div>
+                </aside>
+
+                <main class="basis-9/12 bg-white h-fit px-10 py-5 ">
+                    <a href="" class="block lg:hidden mb-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="48" d="M244 400L100 256l144-144M120 256h292" />
+                        </svg>
+                    </a>
+                    <h1 class="font-bold text-3xl mb-3">Survei Kepuasan Dudi</h1>
+                    <hr class="bg-black">
+
+                    <div class="px-2 py-2 bg-gray-200 text-sm mb-5">
+                        <p class="mb-3">Dengan hormat, kami menyampaikan kuesioner ini untuk mendapatkan informasi terkait Pelaksanaan Siswa PKL SMK Negeri 2
+                        Malang dengan perusahaan/ instansi yang Bapak/ Ibu/ Saudara pimpin.</p>
+                        <p>
+                            Informasi yang kami peroleh akan kami gunakan sebagai acuan dalam peningkatan hubungan kerjasama dan kualitas
+                            Pelaksanaan Siswa PKL SMK Negeri 2 Malang.
+                            Terima kasih kami sampaikan atas bantuan dan kerjasamanya.
+                        </p>
+                    </div>
+                    <div class="px-2 py-2 bg-gray-200 text-sm">
+                       <p class="mb-3 font-bold">Petunjuk pengisian</p>
+                       <ul class="list-decimal list-inside mb-3">
+                            <li>Pilihlah angka 1-5 sesuai dengan pengalaman pelaksaan kegiatan PKL</li>
+                            <li>Keterangan :</li>
+                       </ul>
+                       <div class="w-full flex justify-between">
+                            <div class="w-full text-justify">
+                                <ul class="list-inside">
+                                    <li>5 = Sangat Memuaskan</li>
+                                    <li>4 = Memuaskan</li>
+                                    <li>3 = Cukup Memuaskan</li>
+                                    <li>2 = Kurang Memuaskan</li>
+                                    <li>1 = Tidak Memuaskan</li>
+                                </ul>
+                            </div>
+                            <div class="w-full text-justify">
+                                <p>SP = Sangat Penting</p>
+                                <p><pre class="inline"> </pre>P = Penting</p>
+                                <p>CP = Cukup Penting</p>
+                                <p>KP = Kurang Penting</p>
+                                <p>TP = Tidak Penting</p>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <form action="" x-data="{ religius: '', jujur: '', tanggung_jawab: '', disiplin: '', tepat_waktu: '', kritik: ''}">
+                            <div class="w-full px-5 py-3 rounded-xl border-2 border-gray-300 shadow-md bg-[#D8EEFF] mb-5">
+                                <p>1. Religiusitas (ketaatan dalam beribadah) yang ditunjukan oleh siswa PKL SMK Negeri 2 Malang</p>
+                                <div class="flex justify-center items-center gap-10 mt-10">
+                                    <span>Tidak Memuaskan</span>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>1</span>
+                                        <input type="radio" name="religius" value="1" class="w-5 h-5" x-model="religius">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>2</span>
+                                        <input type="radio" name="religius" value="2" class="w-5 h-5" x-model="religius">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>3</span>
+                                        <input type="radio" name="religius" value="3" class="w-5 h-5" x-model="religius">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>4</span>
+                                        <input type="radio" name="religius" value="4" class="w-5 h-5" x-model="religius">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>5</span>
+                                        <input type="radio" name="religius" value="5" class="w-5 h-5" x-model="religius">
+                                    </label>
+                                    <span>Sangat Memuaskan</span>
+                                </div>
+                            </div>
+                            <div class="w-full px-5 py-3 rounded-xl border-2 border-gray-300 shadow-md bg-[#D8EEFF] mb-5">
+                                <p>2. Sikap kejujuran yang ditunjukkan oleh siswa PKL SMK Negeri 2 Malang</p>
+                                <div class="flex justify-center items-center gap-10 mt-10">
+                                    <span>Tidak Memuaskan</span>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>1</span>
+                                        <input type="radio" name="jujur" value="1" class="w-5 h-5" x-model="jujur">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>2</span>
+                                        <input type="radio" name="jujur" value="2" class="w-5 h-5" x-model="jujur">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>3</span>
+                                        <input type="radio" name="jujur" value="3" class="w-5 h-5" x-model="jujur">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>4</span>
+                                        <input type="radio" name="jujur" value="4" class="w-5 h-5" x-model="jujur">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>5</span>
+                                        <input type="radio" name="jujur" value="5" class="w-5 h-5" x-model="jujur">
+                                    </label>
+                                    <span>Sangat Memuaskan</span>
+                                </div>
+                            </div>
+                            <div class="w-full px-5 py-3 rounded-xl border-2 border-gray-300 shadow-md bg-[#D8EEFF] mb-5">
+                                <p>3. Sikap tanggung jawab yang ditunjukkan oleh siswa PKL SMK Negeri 2 Malang</p>
+                                <div class="flex justify-center items-center gap-10 mt-10">
+                                    <span>Tidak Memuaskan</span>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>1</span>
+                                        <input type="radio" name="tanggung_jawab" value="1" class="w-5 h-5" x-model="tanggung_jawab">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>2</span>
+                                        <input type="radio" name="tanggung_jawab" value="2" class="w-5 h-5" x-model="tanggung_jawab">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>3</span>
+                                        <input type="radio" name="tanggung_jawab" value="3" class="w-5 h-5" x-model="tanggung_jawab">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>4</span>
+                                        <input type="radio" name="tanggung_jawab" value="4" class="w-5 h-5" x-model="tanggung_jawab">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>5</span>
+                                        <input type="radio" name="tanggung_jawab" value="5" class="w-5 h-5" x-model="tanggung_jawab">
+                                    </label>
+                                    <span>Sangat Memuaskan</span>
+                                </div>
+                            </div>
+                            <div class="w-full px-5 py-3 rounded-xl border-2 border-gray-300 shadow-md bg-[#D8EEFF] mb-5">
+                                <p>4. Sikap kedisiplinan yang ditunjukkan oleh siswa PKL SMK Negeri 2 Malang</p>
+                                <div class="flex justify-center items-center gap-10 mt-10">
+                                    <span>Tidak Memuaskan</span>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>1</span>
+                                        <input type="radio" name="disiplin" value="1" class="w-5 h-5" x-model="disiplin">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>2</span>
+                                        <input type="radio" name="disiplin" value="2" class="w-5 h-5" x-model="disiplin">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>3</span>
+                                        <input type="radio" name="disiplin" value="3" class="w-5 h-5" x-model="disiplin">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>4</span>
+                                        <input type="radio" name="disiplin" value="4" class="w-5 h-5" x-model="disiplin">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>5</span>
+                                        <input type="radio" name="disiplin" value="5" class="w-5 h-5" x-model="disiplin">
+                                    </label>
+                                    <span>Sangat Memuaskan</span>
+                                </div>
+                            </div>
+                            <div class="w-full px-5 py-3 rounded-xl border-2 border-gray-300 shadow-md bg-[#D8EEFF] mb-5">
+                                <p>5. Ketepatan waktu dalam menyelesaikan tugas atau pekerjaan</p>
+                                <div class="flex justify-center items-center gap-10 mt-10">
+                                    <span>Tidak Memuaskan</span>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>1</span>
+                                        <input type="radio" name="tepat_waktu" value="1" class="w-5 h-5" x-model="tepat_waktu">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>2</span>
+                                        <input type="radio" name="tepat_waktu" value="2" class="w-5 h-5" x-model="tepat_waktu">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>3</span>
+                                        <input type="radio" name="tepat_waktu" value="3" class="w-5 h-5" x-model="tepat_waktu">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>4</span>
+                                        <input type="radio" name="tepat_waktu" value="4" class="w-5 h-5" x-model="tepat_waktu">
+                                    </label>
+                                    <label for="" class="flex flex-col justify-center items-center">
+                                        <span>5</span>
+                                        <input type="radio" name="tepat_waktu" value="5" class="w-5 h-5" x-model="tepat_waktu">
+                                    </label>
+                                    <span>Sangat Memuaskan</span>
+                                </div>
+                            </div>
+                            <label for="">
+                                <span class="font-bold mb-2 block">Kritik & Saran</span>
+                                <textarea name="" id="" class="w-full h-44 rounded-md border border-gray-300 px-5 py-3 focus:outline-none resize-none" placeholder="Masukan kritik & saran" x-model="kritik"></textarea>
+                            </label>
+                            <div class="mt-3 flex justify-end">
+                                <div class="px-10 py-3 text-sm text-white rounded bg-gray-300 cursor-not-allowed" x-show="!religius.length || !jujur.length || !tanggung_jawab.length || !disiplin.length || !tepat_waktu.length || !kritik.length">Kirim</div>
+                                <button type="submit" class="px-10 py-3 text-sm text-white rounded bg-primary hover:bg-primaryhover" x-show="religius && jujur && tanggung_jawab && disiplin && tepat_waktu && kritik.length">Kirim</button>
+                            </div>
+                        </form>
+                    </div>
+
+                   
+                </main>
+            </div>
+        </section>
+
+    </section>
+
+
+
+    <script defer src="https://unpkg.com/alpinejs@3.8.0/dist/cdn.min.js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>

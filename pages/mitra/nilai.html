@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class=" bg-[#F9F9F9] overflow-x-hidden">
+
+    <section class="mx-10">
+
+
+        <nav class="py-2 bg-white -mx-10 px-10">
+            <div class="flex justify-between items-center">
+                <div>
+                    <img src="../assets/images/logo.png" alt="" class="scale-75 -mx-8 md:mx-0 md:scale-100">
+                </div>
+
+                <div class="">
+                    <a href=""
+                        class="flex items-center gap-3 text-red-500 before:w-0.5 before:h-6 before:bg-gray-200 before:mr-10">
+                        <span class="">
+                            <svg class="w-[25px] h-auto  md:w-[31px] md:h-[27px]" viewBox="0 0 31 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.44372 3.45455H13.939V0.5H2.44372C1.79561 0.5 1.17404 0.811282 0.71575 1.36537C0.257463 1.91945 0 2.67095 0 3.45455V23.5455C0 24.329 0.257463 25.0805 0.71575 25.6346C1.17404 26.1887 1.79561 26.5 2.44372 26.5H13.939V23.5455H2.44372V3.45455Z"
+                                    fill="#C43E40" />
+                                <path
+                                    d="M30.0091 11.1358L22.1892 4.65942L20.8011 7.02306L26.8225 11.9867H9.11035V14.9649H26.842L20.8207 19.9522L22.2087 22.3158L30.0091 15.8631C30.3162 15.5908 30.5659 15.235 30.738 14.8243C30.9101 14.4137 30.9998 13.9598 30.9998 13.4994C30.9998 13.0391 30.9101 12.5852 30.738 12.1745C30.5659 11.7639 30.3162 11.408 30.0091 11.1358Z"
+                                    fill="#C43E40" />
+                            </svg>
+                        </span>
+                        <span class="hidden lg:block">
+                            Keluar
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="bg-[##F9F9F9] mt-10 -mx-10 md:px-10">
+            <div class="flex justify-between gap-10 flex-col lg:flex-row">
+                <aside class="bg-white px-2 py-2 w-screen overflow-hidden rounded-md lg:basis-3/12 h-fit">
+                    <div class="border-2 border-gray-500 rounded-md px-3 mb-5 py-3">
+                        <a href="../mitra/index.html" class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8cGVvcGxlfHx8fHx8MTY3NjcxMDY0NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100"
+                                alt="" class="rounded-full w-[41px] h-[41px] bg-cover">
+
+                            <div>
+                                <h4 class="font-bold">Tokopaedi</h4>
+                                <p>Mitra PKL</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="divide-y">
+                        <a href="../mitra/lowongan.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Lowongan PKL
+                        </a>
+                        <a href="../mitra/calon-siswa.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Calon Siswa PKL
+                        </a>
+                        <a href="../mitra/pengumuman.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Pengumuman
+                        </a>
+                        <a href="../mitra/survei.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                            Survei Kepuasan Dudi
+                        </a>
+
+                        <!-- this dropdown show in large screen and hide in phone screen -->
+                        <div x-data="{ open: false }" class="hidden lg:block">
+                            <div x-on:click="open = ! open"
+                                class="py-3 px-2 font-bold flex justify-between items-center cursor-pointer rounded hover:bg-gray-300">
+                                Siswa
+
+                                <span x-show="!open" class="transition-all ease-in-out">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.0716 1.98807L10.0717 7.9429L15.9956 7.94302C16.1307 7.93881 16.2652 7.96192 16.3912 8.01097C16.5171 8.06001 16.6318 8.13398 16.7284 8.22844C16.933 8.43302 17.048 8.71048 17.048 8.99979C17.048 9.28911 16.933 9.56657 16.7285 9.77114C16.6357 9.8675 16.5242 9.94389 16.4009 9.99562C16.2775 10.0474 16.1449 10.0733 16.0111 10.0719L10.0486 10.0333L10.0487 16.0344C10.0515 16.2859 9.9576 16.5288 9.78647 16.7131C9.5819 16.9177 9.30444 17.0326 9.01512 17.0326C8.72581 17.0326 8.44835 16.9177 8.24377 16.7131C8.14138 16.6189 8.05971 16.5044 8.00393 16.3769C7.94816 16.2494 7.9195 16.1118 7.91978 15.9726L7.95823 10.0564L2.01883 10.0562C1.88634 10.0584 1.75473 10.0342 1.63161 9.98526C1.50849 9.93627 1.39628 9.86339 1.30147 9.77081C1.09689 9.56623 0.981955 9.28877 0.981949 8.99945C0.981943 8.71014 1.09687 8.43268 1.30144 8.22811C1.39421 8.13175 1.50569 8.05536 1.62904 8.00363C1.7524 7.9519 1.88503 7.92593 2.01879 7.9273L7.98132 7.96599L7.9812 1.96489C7.97843 1.71339 8.0723 1.47042 8.24344 1.28611C8.44801 1.08154 8.72547 0.966614 9.01478 0.96662C9.3041 0.966626 9.58156 1.08156 9.78614 1.28614C9.96895 1.47358 10.0715 1.72582 10.0716 1.98807Z"
+                                            fill="#5F6368" />
+                                    </svg>
+                                </span>
+
+                                <span x-show="open" class="transition-all ease-in-out">
+                                    <svg width="18" height="2" viewBox="0 0 19 2" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.6 2H1.4C1.16131 2 0.932387 1.89464 0.763604 1.70711C0.594821 1.51957 0.5 1.26522 0.5 1C0.5 0.734784 0.594821 0.480429 0.763604 0.292892C0.932387 0.105356 1.16131 0 1.4 0H17.6C17.8387 0 18.0676 0.105356 18.2364 0.292892C18.4052 0.480429 18.5 0.734784 18.5 1C18.5 1.26522 18.4052 1.51957 18.2364 1.70711C18.0676 1.89464 17.8387 2 17.6 2Z"
+                                            fill="#5F6368" />
+                                    </svg>
+
+                                </span>
+                            </div>
+
+                            <hr x-show="open">
+                            <div class="divide-y px-5 transition-all ease-in" :class="open ? '' : 'hidden'">
+                                <a href="../mitra/list-siswa.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Daftar Siswa
+                                </a>
+                                <a href="../mitra/jurnal.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Jurnal
+                                </a>
+                                <a href="../mitra/absensi.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Absensi
+                                </a>
+                                <a href="../mitra/laporan.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Laporan Akhir
+                                </a>
+                                <a href="../mitra/nilai.html" class="block px-3 py-3 rounded hover:bg-gray-300">
+                                    Nilai Akhir
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- this menu show in phone screen and hide large screen -->
+                        <div class="divide-y block lg:hidden">
+                            <a href="../guru/list-siswa.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Daftar Siswa
+                            </a>
+                            <a href="../guru/jurnal.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Jurnal
+                            </a>
+                            <a href="../guru/absensi.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Absensi
+                            </a>
+                            <a href="../guru/laporan.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Laporan Akhir & Presentasi
+                            </a>
+                            <a href="../guru/nilai.html" class="block py-3 px-2 rounded hover:bg-gray-300">
+                                Nilai Akhir
+                            </a>
+                        </div>
+
+                    </div>
+                </aside>
+
+                <main class="basis-9/12 bg-white h-fit px-10 py-5 ">
+                    <a href="" class="block lg:hidden mb-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="48" d="M244 400L100 256l144-144M120 256h292" />
+                        </svg>
+                    </a>
+                    <h1 class="font-bold text-3xl mb-3">Nilai Akhir</h1>
+                    <hr class="bg-black">
+
+                    <div class="mt-10">
+                        <div class="mb-10">
+                            <p>Format nilai dapat diunduh dibawah ini.</p>
+                            <div class="rounded-md w-full px-5 py-3 border border-gray-300 flex justify-between items-center">
+                                <div class="flex gap-3 items-center flex-shrink">
+                                    <span>
+                                        <svg width="60" height="60" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="75" height="75" rx="10" fill="#C1DBFC" />
+                                            <path
+                                                d="M40.6693 20.0013V23.2569C44.9191 23.2812 49.5689 23.2122 53.82 23.2812C53.97 23.2546 54.1239 23.264 54.2697 23.3089C54.4154 23.3538 54.5489 23.4328 54.6596 23.5397C54.7702 23.6467 54.855 23.7785 54.9072 23.9249C54.9593 24.0712 54.9774 24.2279 54.96 24.3827C55.0275 32.3984 54.9438 40.8721 55 48.8891C54.975 49.4008 55.0112 50.3193 54.9338 50.8297C54.835 51.4808 54.5513 51.6062 53.9125 51.6944C53.5551 51.7443 52.9576 51.7379 52.6063 51.7546C49.1165 51.7367 45.6291 51.7405 42.1392 51.7418H40.6705V55L20 51.7392V23.2633L40.6693 20.0013Z"
+                                                fill="#283C82" />
+                                            <path
+                                                d="M40.6694 24.4773H53.7939V50.5201H40.6694V47.2644H51.0065V45.6372H40.6694V43.6032H51.0065V41.9747H40.6694V39.9407H51.0065V38.3123H40.6694V36.2783H51.0065V34.6498H40.6694V32.6158H51.0065V30.9873H40.6694V28.9534H51.0065V27.3249H40.6694V24.4773ZM28.2161 31.6679C28.966 31.6231 29.7273 31.5911 30.4822 31.5502C31.011 34.2967 31.5522 37.0394 32.1247 39.7744C32.5734 36.9499 33.0709 34.1343 33.5521 31.3148C34.3465 31.2857 35.1403 31.243 35.9333 31.1869C35.0346 35.1295 34.2471 39.1054 33.2659 43.025C32.6022 43.3793 31.6085 43.0084 30.821 43.0659C30.2922 40.3719 29.676 37.6931 29.2023 34.9888C28.7373 37.6253 28.1323 40.226 27.5998 42.8382C26.8365 42.7973 26.0703 42.75 25.3012 42.6962C24.6412 39.1144 23.8662 35.5594 23.25 31.9698C23.93 31.9378 24.6137 31.9084 25.2937 31.8841C25.7037 34.4758 26.1686 37.0561 26.5261 39.6516C27.0861 36.9908 27.6598 34.3287 28.2161 31.6679Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                    <p class="font-bold">Template Format Nilai PKL</p>
+                                </div>
+                                <a href="" class="block px-5 py-2 rounded text-center text-primary border border-primary text-sm font-bold hover:bg-primary hover:text-white">Download</a>
+                            </div>
+                        </div>
+                        <div>
+                            <form action="" x-data="{ nilai: ''}">
+                                <label for="nilai" class="block mb-5 cursor-pointer">
+                                    <span class="font-medium after:content-['*'] after:ml-2 after:text-red-500">Upload Nilai Siswa</span>
+                                    <div
+                                        class="w-full h-40 bg-[#F5F9FC] rounded-md border border-primary border-dashed flex justify-center flex-col items-center mt-3">
+                                        <div class="flex flex-col items-center" id="nilai-text">
+                                            <span>
+                                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.556543 18.9092C0.556543 29.0791 8.83021 37.3527 19 37.3527C29.17 37.3527 37.4435 29.079 37.4435 18.9092C37.4435 8.73925 29.17 0.465723 19 0.465723C8.83007 0.465723 0.556543 8.73939 0.556543 18.9092ZM2.32034 18.9092C2.32034 9.7123 9.80299 2.22952 19 2.22952C28.1969 2.22952 35.6797 9.71217 35.6797 18.9092C35.6797 28.1061 28.1969 35.5889 19 35.5889C9.80313 35.5889 2.32034 28.1062 2.32034 18.9092Z"
+                                                        fill="#315EC3" stroke="#F9FFF9" stroke-width="0.3" stroke-linecap="square" />
+                                                    <path
+                                                        d="M18.6488 26.2734C18.6488 26.652 18.9559 26.9591 19.3345 26.9591C19.713 26.9591 20.0202 26.6524 20.0202 26.2734V12.3448C20.0202 11.9662 19.7131 11.6591 19.3345 11.6591C18.9558 11.6591 18.6488 11.9662 18.6488 12.3448V26.2734Z"
+                                                        fill="#483EA8" stroke="#483EA8" stroke-width="0.3" stroke-linecap="square" />
+                                                    <path
+                                                        d="M19.3344 13.3159L15.5337 17.1165L19.3344 13.3159ZM19.3344 13.3159L23.1352 17.1166C23.2689 17.2504 23.4449 17.3174 23.62 17.3175L19.3344 13.3159ZM14.5639 17.1166C14.8317 17.3844 15.266 17.3846 15.5336 17.1166L23.6201 17.3175C23.7949 17.3174 23.971 17.2509 24.105 17.1166C24.3728 16.8487 24.3728 16.4147 24.1049 16.1469L19.8193 11.8612C19.5515 11.5934 19.1171 11.5932 18.8495 11.8612C18.8495 11.8612 18.8494 11.8613 18.8494 11.8613L14.5639 16.1469C14.296 16.4147 14.296 16.8487 14.5639 17.1166Z"
+                                                        fill="#483EA8" stroke="#483EA8" stroke-width="0.3" stroke-linecap="square" />
+                                                </svg>
+                                            </span>
+                                            <h4 class="font-bold">Upload From Device</h4>
+                                            <p class="text-xs text-gray-500">max: 2MB - jpg, png</p>
+                                        </div>
+                                        <input type="file" class="hidden" id="nilai" x-model="nilai" required>
+                                    </div>
+                                </label>
+                                <div class="flex justify-end">
+                                    <div class="px-5 py-2 text-sm text-white font-medium bg-gray-500 rounded" x-show="!nilai.length">Upload Nilai</div>
+                                    <button class="px-5 py-2 text-sm text-white font-medium bg-primary hover:bg-primaryhover rounded" x-show="nilai.length">Upload Nilai</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+    </section>
+
+
+
+    <script defer src="https://unpkg.com/alpinejs@3.8.0/dist/cdn.min.js"></script>
+    <script>
+        var nilai = document.getElementById('nilai');
+        var nilaiText = document.getElementById('nilai-text');
+
+        nilai.addEventListener('change', function () {
+            if (this.files.length) {
+                nilaiText.innerText = this.files[0].name;
+            }
+        });
+    </script>
+</body>
+
+</html>
